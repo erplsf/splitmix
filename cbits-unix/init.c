@@ -6,6 +6,8 @@
 #include <sys/random.h>
 #endif
 
+#include <crypt.h>
+
 uint64_t splitmix_init() {
 	uint64_t result;
 	int r = getentropy(&result, sizeof(uint64_t));
